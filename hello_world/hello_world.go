@@ -3,11 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("hello world")
+	n,err := fmt.Println("hello world")
+	fmt.Println(n)
+	fmt.Println(err)
 	foo()
 }
 
 func foo() {
-	fmt.Println("i'm foo")
+      n,_ := fmt.Println("i'm foo")
+      fmt.Println(n)
 
 }
